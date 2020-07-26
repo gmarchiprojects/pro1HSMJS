@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vGas = 4.19; vEta = 3.16;
+        var codigo = prompt("Digite o código do combustivel: 1 - Gasolina e 2 - Etanol");
+        if (codigo == 1){
+            var qtdLitros = prompt("Quantos litros você deseja?")
+            var vrTotal = qtdLitros *  vGas;
+            document.write("Você irá pagar R$ "+vrTotal.toFixed(2)+" para abastecer "+qtdLitros+" litros de Gasolina");
+        }else{
+            if (codigo == 2){
+                var qtdLitros = prompt("Quantos litros você deseja?")
+                var vrTotal = qtdLitros *  vEta;
+                document.write("Você irá pagar R$ "+vrTotal.toFixed(2)+" para abastecer "+qtdLitros+" litros de Etanol");
+            }
+        }
+        if (codigo != 1 && 2){
+            document.write("Esse produto não existe em nosso catálogo.")
+        }
+
+    </script>
+</body>
+</html>
